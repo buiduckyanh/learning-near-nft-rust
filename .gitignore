@@ -5359,3 +5359,13 @@ integration-tests/target/debug/incremental/integration_tests-182g2v7elk26j/s-gh4
 integration-tests/target/debug/incremental/integration_tests-182g2v7elk26j/s-gh49q7qgdt-1eu7ucf-3mfttn3bl3szl/query-cache.bin
 integration-tests/target/debug/incremental/integration_tests-182g2v7elk26j/s-gh49q7qgdt-1eu7ucf-3mfttn3bl3szl/work-products.bin
 integration-tests/target/debug/incremental/integration_tests-182g2v7elk26j/s-gh49q7qgdt-1eu7ucf.lock
+contract/target/debug/.fingerprint/hello_near-306b6f42ff949bb8/output-lib-hello_near
+contract/target/debug/.fingerprint/hello_near-a5db866f666a4324/output-test-lib-hello_near
+contract/target/debug/incremental/hello_near-180v9eq8m3c69/s-gh4ag8wll1-6q9ljp.lock
+contract/target/debug/incremental/hello_near-180v9eq8m3c69/s-gh4ag8wll1-6q9ljp-1qpyisxa27tts/dep-graph.bin
+contract/target/debug/incremental/hello_near-180v9eq8m3c69/s-gh4ag8wll1-6q9ljp-1qpyisxa27tts/query-cache.bin
+contract/target/debug/incremental/hello_near-180v9eq8m3c69/s-gh4ag8wll1-6q9ljp-1qpyisxa27tts/work-products.bin
+contract/target/debug/incremental/hello_near-2ib0uy1d3m127/s-gh4ag8wmjf-gqgmtb.lock
+contract/target/debug/incremental/hello_near-2ib0uy1d3m127/s-gh4ag8wmjf-gqgmtb-2ursst2kbt6u1/dep-graph.bin
+contract/target/debug/incremental/hello_near-2ib0uy1d3m127/s-gh4ag8wmjf-gqgmtb-2ursst2kbt6u1/query-cache.bin
+contract/target/debug/incremental/hello_near-2ib0uy1d3m127/s-gh4ag8wmjf-gqgmtb-2ursst2kbt6u1/work-products.bin
