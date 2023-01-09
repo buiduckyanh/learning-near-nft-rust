@@ -1,3 +1,5 @@
+use std::sync::Arc;
+
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 use near_sdk::collections::UnorderedMap;
 use near_sdk::serde::Serialize;
@@ -28,7 +30,31 @@ impl Default for NFTContract {
         Self {
             owner_by_id: UnorderedMap::new(b'm'),
             token_id: 0,
-            token_by_id: UnorderedMap::new(b'n')
+            token_by_id: UnorderedMap::new(b'n'),
         }
+    }
+}
+
+impl NFTContract {
+    pub fn mint(
+        &mut self,
+        token_owner_id: AccountId,
+        name: String,
+        description: String,
+        media_url: String,
+        level: u128,
+    ) -> Token {
+        self.owner_by_id.insert(&self.token_id, &token_owner_id);
+        let token = Token {
+            token_id: self.token_id,
+            owner_id: token_owner_id,
+            name: name,
+            description: description,
+            media_url: media_url,
+            level: level,
+        };
+        self.token_by_id.insert(&self.token_id, &token);
+        self.token_id += 1;
+        return token;
     }
 }
