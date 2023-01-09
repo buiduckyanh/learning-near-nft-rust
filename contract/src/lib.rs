@@ -1,5 +1,3 @@
-use std::sync::Arc;
-
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 use near_sdk::collections::UnorderedMap;
 use near_sdk::serde::Serialize;
@@ -57,4 +55,27 @@ impl NFTContract {
         self.token_id += 1;
         return token;
     }
+
+    pub fn get_total_tokens(&self) -> u128 {
+        return self.token_id;
+    }
+
+    pub fn get_token_by_id(&self, token_id: u128) -> Token
+    {
+        if let None = self.token_by_id.get(&token_id) {
+            return Token {
+                token_id: token_id,
+                owner_id: "anhbui.testnet".parse().unwrap(),
+                name: "Not Found".to_string(),
+                description: "Not Found".to_string(),
+                media_url: "Not Found".to_string(),
+                level: 0
+            };
+        }
+        else {
+            return self.token_by_id.get(&token_id).unwrap();
+        }
+    }
+
 }
+
